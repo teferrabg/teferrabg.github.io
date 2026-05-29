@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bazen Gashaw Teferra, PhD | AI and Mental Health Research</title>
+    <meta name="description" content="Dr. Bazen Gashaw Teferra is an AI and mental health researcher developing safe, equitable, clinician-in-the-loop language technologies for mental health screening and care navigation.">
+    <meta property="og:title" content="Bazen Gashaw Teferra, PhD">
+    <meta property="og:description" content="AI and mental health research across speech, language, LLM safety, digital psychiatry, and equitable clinical AI.">
+    <meta property="og:type" content="website">
+    <script>
+      (() => {
+        document.documentElement.classList.add("js");
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h12m-5-5 5 5-5 5"></path>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M6.6 9.3v9.4H3.5V9.3h3.1ZM5.1 5a1.8 1.8 0 1 1 0 3.6A1.8 1.8 0 0 1 5.1 5Zm6.6 4.3.1 1.3c.6-.9 1.7-1.6 3.2-1.6 2.4 0 4.2 1.6 4.2 5v4.7h-3.1v-4.4c0-1.6-.6-2.5-1.9-2.5-1.1 0-1.7.7-2 1.4-.1.2-.1.6-.1.9v4.6H9V9.3h2.7Z"></path>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M12 3.3a8.8 8.8 0 0 0-2.8 17.1c.4.1.6-.2.6-.4v-1.5c-2.3.5-2.8-1-2.8-1-.4-1-.9-1.2-.9-1.2-.8-.5.1-.5.1-.5.8.1 1.3.9 1.3.9.8 1.3 2 1 2.4.8.1-.5.3-1 .5-1.2-1.8-.2-3.7-.9-3.7-4 0-.9.3-1.6.9-2.2-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.3.8.7-.2 1.4-.3 2.1-.3s1.4.1 2.1.3c1.6-1 2.3-.8 2.3-.8.5 1.1.2 1.9.1 2.1.5.6.9 1.3.9 2.2 0 3.1-1.9 3.8-3.7 4 .3.3.6.8.6 1.6V20c0 .2.2.5.6.4A8.8 8.8 0 0 0 12 3.3Z"></path>
+      </symbol>
+      <symbol id="icon-scholar" viewBox="0 0 24 24">
+        <path d="m12 4 9 5-9 5-9-5 9-5Z"></path>
+        <path d="M6.5 11.4v4.1c1.7 1.4 3.5 2.1 5.5 2.1s3.8-.7 5.5-2.1v-4.1"></path>
+        <path d="M20 9.5v5"></path>
+      </symbol>
+      <symbol id="icon-lab" viewBox="0 0 24 24">
+        <path d="M9 3h6"></path>
+        <path d="M10 3v6.2l-4.7 8.2A2.4 2.4 0 0 0 7.4 21h9.2a2.4 2.4 0 0 0 2.1-3.6L14 9.2V3"></path>
+        <path d="M8 16h8"></path>
+      </symbol>
+      <symbol id="icon-brain" viewBox="0 0 24 24">
+        <path d="M9.5 5.2A3 3 0 0 0 4.8 8a3.2 3.2 0 0 0 .2 6.2 3.4 3.4 0 0 0 3.9 4.5"></path>
+        <path d="M14.5 5.2A3 3 0 0 1 19.2 8a3.2 3.2 0 0 1-.2 6.2 3.4 3.4 0 0 1-3.9 4.5"></path>
+        <path d="M12 4.5v15"></path>
+        <path d="M8 10.2c.9 0 1.7.4 2.2 1.1"></path>
+        <path d="M16 10.2c-.9 0-1.7.4-2.2 1.1"></path>
+      </symbol>
+      <symbol id="icon-wave" viewBox="0 0 24 24">
+        <path d="M3 12h2l1.6-5 3.2 10 3.4-12 2.8 7h5"></path>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 5 6v5.7c0 4.5 3 7.8 7 9.3 4-1.5 7-4.8 7-9.3V6l-7-3Z"></path>
+        <path d="m9 12 2 2 4-5"></path>
+      </symbol>
+      <symbol id="icon-scale" viewBox="0 0 24 24">
+        <path d="M12 3v18"></path>
+        <path d="M5 6h14"></path>
+        <path d="M7 6 4 13h6L7 6Z"></path>
+        <path d="m17 6-3 7h6l-3-7Z"></path>
+      </symbol>
+      <symbol id="icon-clinical" viewBox="0 0 24 24">
+        <path d="M8 3h8v5h5v13H3V8h5V3Z"></path>
+        <path d="M9 15h6"></path>
+        <path d="M12 12v6"></path>
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8 8-4 4 4 4"></path>
+        <path d="m16 8 4 4-4 4"></path>
+        <path d="m14 5-4 14"></path>
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 0-3 0V4Z"></path>
+        <path d="M5 4v16"></path>
+        <path d="M8 8h7"></path>
+      </symbol>
+      <symbol id="icon-community" viewBox="0 0 24 24">
+        <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+        <path d="M16 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"></path>
+        <path d="M3.5 20a4.5 4.5 0 0 1 9 0"></path>
+        <path d="M13.5 19a3.5 3.5 0 0 1 7 0"></path>
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="m4.9 4.9 1.4 1.4"></path>
+        <path d="m17.7 17.7 1.4 1.4"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="m4.9 19.1 1.4-1.4"></path>
+        <path d="m17.7 6.3 1.4-1.4"></path>
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20.5 15.5A8 8 0 0 1 8.5 3.5 8.8 8.8 0 1 0 20.5 15.5Z"></path>
+      </symbol>
+    </svg>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Bazen Gashaw Teferra home">
+        <span class="brand-mark" aria-hidden="true">BG</span>
+        <span>
+          <strong>Bazen Gashaw Teferra</strong>
+          <small>AI & Mental Health</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+        <svg class="theme-icon theme-icon-sun" aria-hidden="true"><use href="#icon-sun"></use></svg>
+        <svg class="theme-icon theme-icon-moon" aria-hidden="true"><use href="#icon-moon"></use></svg>
+        <span>Theme</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Introduction">
+        <div class="hero-content">
+          <p class="eyebrow">Applications of AI in mental health care</p>
+          <h1>Bazen Gashaw Teferra, PhD</h1>
+          <p class="hero-lede">
+            I study how speech, language, and large language models can support mental health screening,
+            symptom monitoring, and care navigation while staying safe, interpretable, equitable, and clinically accountable.
+          </p>
+          <div class="hero-socials" aria-label="Profile links">
+            <a class="icon-button" href="https://www.linkedin.com/in/bazengashawteferra/" aria-label="LinkedIn profile">
+              <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+            </a>
+            <a class="icon-button" href="https://scholar.google.com/citations?user=f8ZlA2sAAAAJ&hl=en" aria-label="Google Scholar profile">
+              <svg aria-hidden="true"><use href="#icon-scholar"></use></svg>
+            </a>
+            <a class="icon-button" href="https://ai.psychiatry.utoronto.ca/" aria-label="AI for Mental Health research group">
+              <svg aria-hidden="true"><use href="#icon-lab"></use></svg>
+            </a>
+            <a class="icon-button" href="https://github.com/teferrabg" aria-label="GitHub profile">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </a>
+          </div>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#projects">
+              View Research
+              <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+            <a class="button secondary" href="#publications">
+              Publications
+              <svg aria-hidden="true"><use href="#icon-book"></use></svg>
+            </a>
+          </div>
+          <div class="research-tags" aria-label="Research focus tags">
+            <span>Speech & language</span>
+            <span>LLM safety</span>
+            <span>Digital psychiatry</span>
+            <span>Health equity</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-section reveal" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research identity</p>
+          <h2>Building mental health AI that can be evaluated before it is trusted.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            Dr. Bazen Gashaw Teferra is an AI and mental health researcher in Toronto working across
+            computer engineering, natural language processing, psychiatry, digital health, and equitable
+            health service delivery. He is part of the
+            <a href="https://ai.psychiatry.utoronto.ca/">AI for Mental Health research group</a>.
+            His work asks how language technologies can help identify and monitor
+            mental health needs without replacing clinicians or weakening clinical accountability.
+          </p>
+          <p>
+            His research has moved from acoustic and linguistic signals of generalized anxiety disorder to
+            transformer-based screening, LLM-based depression assessment, therapeutic communication evaluation,
+            safety guardrails, agentic AI in psychiatry, and fairness auditing.
+          </p>
+        </div>
+      </section>
+
+      <section class="section pillars" aria-label="Research pillars">
+        <article class="pillar reveal">
+          <svg class="card-icon" aria-hidden="true"><use href="#icon-wave"></use></svg>
+          <span class="pillar-index">01</span>
+          <h3>Speech And Language Signals</h3>
+          <p>Using spoken and written language to study anxiety, depression, and symptom-relevant clinical interviews.</p>
+        </article>
+        <article class="pillar reveal">
+          <svg class="card-icon" aria-hidden="true"><use href="#icon-shield"></use></svg>
+          <span class="pillar-index">02</span>
+          <h3>LLM Safety And Evaluation</h3>
+          <p>Testing hallucination, false reassurance, refusal behavior, empathy, crisis response, and false-premise agreement.</p>
+        </article>
+        <article class="pillar reveal">
+          <svg class="card-icon" aria-hidden="true"><use href="#icon-scale"></use></svg>
+          <span class="pillar-index">03</span>
+          <h3>Equity And Governance</h3>
+          <p>Evaluating subgroup performance, demographic bias, consent, privacy, and community-defined harm reduction.</p>
+        </article>
+        <article class="pillar reveal">
+          <svg class="card-icon" aria-hidden="true"><use href="#icon-clinical"></use></svg>
+          <span class="pillar-index">04</span>
+          <h3>Clinical Translation</h3>
+          <p>Designing clinician-facing workflows, benchmarks, summaries, and implementation guardrails for real care settings.</p>
+        </article>
+      </section>
+
+      <section class="section project-section reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects at the intersection of psychiatric measurement and AI safety.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-brain"></use></svg>
+            <p class="status">Published research</p>
+            <h3>LLM-Based Depression Screening</h3>
+            <p>Evaluating whether LLMs can infer item-level PHQ-8 symptoms from clinical interview transcripts.</p>
+            <a class="inline-link" href="https://doi.org/10.1371/journal.pdig.0000943">
+              Read the paper
+              <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-shield"></use></svg>
+            <p class="status">Published research</p>
+            <h3>Safety Guardrails And Irritability</h3>
+            <p>Studying how safety guardrails shape affective realism and therapeutic communication risk in LLMs.</p>
+            <a class="inline-link" href="https://doi.org/10.1038/s41746-025-02333-3">
+              Read the paper
+              <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-scale"></use></svg>
+            <p class="status">Active manuscript</p>
+            <h3>PHQ-8 Demographic Bias Audit</h3>
+            <p>Auditing LLM depression-screening outputs across gender and age subgroups using patient-level error metrics.</p>
+          </article>
+          <article class="project-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-shield"></use></svg>
+            <p class="status">Active experiment</p>
+            <h3>False-Premise Resistance</h3>
+            <p>Testing whether single-agent and multi-agent LLM systems can resist pressure to agree with inaccurate or unsafe premises.</p>
+          </article>
+          <article class="project-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-community"></use></svg>
+            <p class="status">Public code</p>
+            <h3>Therapeutic Alliance Simulation</h3>
+            <p>Simulating LLM patient-therapist conversations and evaluating therapeutic alliance style signals.</p>
+            <a class="inline-link" href="https://github.com/teferrabg/LLM_v_LLM_WAI">
+              View repository
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </a>
+          </article>
+        </div>
+        <div class="repo-showcase">
+          <div class="repo-heading">
+            <p class="eyebrow">Public code and tools</p>
+            <h3>Selected GitHub repositories</h3>
+          </div>
+          <div class="repo-grid" aria-label="GitHub repositories">
+            <a class="repo-card" href="https://github.com/teferrabg/LLM_v_LLM_WAI">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+              <span>
+                <strong>LLM_v_LLM_WAI</strong>
+                <small>Therapeutic alliance simulation and WAI-style evaluation.</small>
+              </span>
+            </a>
+            <a class="repo-card" href="https://github.com/teferrabg/TherapySimulation">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+              <span>
+                <strong>TherapySimulation</strong>
+                <small>LLM therapist-patient conversation simulation and evaluation tooling.</small>
+              </span>
+            </a>
+            <a class="repo-card" href="https://github.com/teferrabg/LLM_Irritability">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+              <span>
+                <strong>LLM_Irritability</strong>
+                <small>Code connected to safety guardrails and irritability metrics.</small>
+              </span>
+            </a>
+            <a class="repo-card" href="https://github.com/teferrabg/medicalSummarizer">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+              <span>
+                <strong>medicalSummarizer</strong>
+                <small>FastAPI service for summarizing medical text with LLMs.</small>
+              </span>
+            </a>
+            <a class="repo-card" href="https://github.com/teferrabg/PTSD_screening">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+              <span>
+                <strong>PTSD_screening</strong>
+                <small>Notebook-based PTSD screening and PCL-C processing work.</small>
+              </span>
+            </a>
+            <a class="repo-card" href="https://github.com/teferrabg">
+              <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+              <span>
+                <strong>More on GitHub</strong>
+                <small>View the full public repository profile.</small>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section independent-section reveal" id="independent-work">
+        <div class="section-heading">
+          <p class="eyebrow">Independent technical work</p>
+          <h2>Personal engineering projects outside my formal research portfolio.</h2>
+        </div>
+        <div class="independent-panel reveal">
+          <svg class="project-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+          <div>
+            <p class="status">Free-time project</p>
+            <h3>Amharic Speech-To-Text</h3>
+            <p>
+              A personal language-technology project focused on Amharic automatic speech recognition,
+              including Whisper fine-tuning, Common Voice and dialect-aware data preparation, transcription
+              API design, and practical evaluation with WER/CER metrics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section publication-section reveal" id="publications">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Peer-reviewed publications and public scholarly outputs.</h2>
+        </div>
+        <div class="publication-list">
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.1001/jamanetworkopen.2026.2750">Alignment of Large Language Model Responses With Human Therapists in Motivational Interviewing</a></h3>
+            <p>JAMA Network Open, 2026</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.1038/s41746-025-02333-3">Assessing the impact of safety guardrails on large language models using irritability metrics</a></h3>
+            <p>npj Digital Medicine, 2026</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.1038/s41746-026-02453-4">Reimagining psychiatric care with agentic AI: promise, challenges, and a roadmap forward</a></h3>
+            <p>npj Digital Medicine, 2026</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.1371/journal.pdig.0000943">Leveraging large language models for automated depression screening</a></h3>
+            <p>PLOS Digital Health, 2025</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.1007/s40596-024-02087-2">Opportunities and Barriers of Generative Artificial Intelligence in the Training of Psychiatrists</a></h3>
+            <p>Academic Psychiatry, 2025</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.2196/55067">Screening for Depression Using Natural Language Processing: Literature Review</a></h3>
+            <p>Interactive Journal of Medical Research, 2024</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.2196/44325">Predicting Generalized Anxiety Disorder From Impromptu Speech Transcripts</a></h3>
+            <p>JMIR Mental Health, 2023</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.2196/39998">Screening for Generalized Anxiety Disorder From Acoustic and Linguistic Features</a></h3>
+            <p>JMIR Formative Research, 2022</p>
+          </article>
+          <article class="reveal">
+            <h3><a href="https://doi.org/10.2196/36828">Acoustic and Linguistic Features of Impromptu Speech and Their Association With Anxiety</a></h3>
+            <p>JMIR Mental Health, 2022</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section reveal" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Engineering training, clinical AI research, and community-facing service.</h2>
+        </div>
+        <div class="timeline">
+          <article class="reveal">
+            <span>2023 - Present</span>
+            <h3>Postdoctoral Fellow, St. Michael's Hospital, Unity Health Toronto</h3>
+            <p>AI for mental health, LLM-based assessment, digital psychiatry, safety guardrails, and clinician-in-the-loop workflows.</p>
+          </article>
+          <article class="reveal">
+            <span>2018 - 2023</span>
+            <h3>PhD, Computer Engineering, University of Toronto</h3>
+            <p>Doctoral research on generalized anxiety disorder prediction from acoustic and linguistic features of impromptu speech.</p>
+          </article>
+          <article class="reveal">
+            <span>2015 - 2018</span>
+            <h3>Teaching And Research, Addis Ababa University</h3>
+            <p>Computer engineering teaching, supervision, and applied student project mentorship.</p>
+          </article>
+          <article class="reveal">
+            <span>Community</span>
+            <h3>Community And Health Equity Service</h3>
+            <p>Board service with <a href="https://www.p2pcanada.org/">People To People Canada</a> and prior board service with the Ethiopian Diabetes Association.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section service-section reveal" id="service">
+        <div class="section-heading">
+          <p class="eyebrow">Community service</p>
+          <h2>Community-facing work connected to health, education, and equity.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-community"></use></svg>
+            <p class="status">Board service</p>
+            <h3><a href="https://www.p2pcanada.org/">People To People Canada</a></h3>
+            <p>
+              Board member with a Canadian charity whose work includes support for orphaned and vulnerable
+              children in Ethiopia, community health programs, preventive health engagement, and mental-health
+              awareness and education initiatives.
+            </p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="project-icon" aria-hidden="true"><use href="#icon-shield"></use></svg>
+            <p class="status">Prior board service</p>
+            <h3>Ethiopian Diabetes Association</h3>
+            <p>
+              Supported health-equity work for people living with diabetes in Ethiopia, including awareness,
+              fundraising, and advocacy related to access to insulin for children with Type 1 diabetes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact">
+        <div>
+          <p class="eyebrow">Connect</p>
+          <h2>For collaborations in mental health AI, LLM safety, clinical evaluation, and equitable digital health.</h2>
+        </div>
+        <div class="contact-links" aria-label="Profile links">
+          <a href="https://www.linkedin.com/in/bazengashawteferra/">
+            <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=f8ZlA2sAAAAJ&hl=en">
+            <svg aria-hidden="true"><use href="#icon-scholar"></use></svg>
+            <span>Google Scholar</span>
+          </a>
+          <a href="https://ai.psychiatry.utoronto.ca/">
+            <svg aria-hidden="true"><use href="#icon-lab"></use></svg>
+            <span>Research Group</span>
+          </a>
+          <a href="https://github.com/teferrabg">
+            <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright <span id="year">2026</span> Bazen Gashaw Teferra.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
